@@ -15,5 +15,7 @@ You need to create a Python program named **sum_numbers.py**. This program shoul
 Commit your changes using the following commands:
 
 ```bash
-
+git add week_1/homework/task_3/sum_numbers.py
+git commit -m "add program which sums two numbers"
+git push
 ```
