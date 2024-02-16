@@ -1,4 +1,4 @@
-# Task 3 Instructions
+# Task 3 
 
 ### Step 1: Update Your Feature Branch
 Before starting your task, make sure your feature branch is up to date with the `main` branch.
