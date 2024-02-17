@@ -7,4 +7,4 @@ if len(sys.argv) > 1:
     for word in words:
         print(word)
 else:
-    print("You haven't provided the text as an argument.")
+    print("You should type to the console valid arguments. Example: python string_words.py some text here")
