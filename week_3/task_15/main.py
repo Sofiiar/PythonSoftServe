@@ -10,8 +10,4 @@ def main():
         if search_actor == 'y':
             search_by_actor()
         else:
-            print("You haven't selected any search criteria.")
-
-
-if __name__ == '__main__':
-    main()
+            print("You haven't selected both search criteria.")
