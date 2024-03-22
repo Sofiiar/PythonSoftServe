@@ -1,5 +1,5 @@
-from search_functions import search, search_movie, movies_by_actors
 from data import GENRES, CAST
+from search_functions import search, movies_by_actors
 
 
 def movie_picker():
@@ -9,7 +9,7 @@ def movie_picker():
 
     actors = movies_by_actors(CAST)
     actor = search(source=list(actors.keys()), source_name='actor')
-    movie = search_movie(actors[actor])
+    movie = search(source=actors[actor], source_name='movie')
     print(f"Selected Movie: {movie} Starring: {actor}")
 
 

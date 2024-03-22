@@ -1,22 +1,15 @@
-def search(source, source_name='genre'):
-    print(f'Available {source_name}(s): {', '.join(sorted(source))}')
+def search(source, source_name='item'):
+    sorted_source = sorted(source)
+    print(f'Available {source_name}(s): {", ".join(sorted_source)}')
+
     while True:
         choice = input(f"Enter {source_name}: ")
-        if choice in source:
-            return choice
+        if choice in map(str, sorted_source):
+            for item in source:
+                if item == choice:
+                    return item
         else:
             print(f"{source_name.capitalize()} '{choice}' is not found. Please try again.")
-
-
-def search_movie(movies):
-    print(f'Available movies: {", ".join(sorted(movies))}')
-    while True:
-        movie = input("Enter movie: ")
-        if movie in movies:
-            print(f"Movie to watch: {movie}.")
-            return movie
-        else:
-            print(f"Movie '{movie}' is not found. Please try again.")
 
 
 def movies_by_actors(cast):
